@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C5C3AAEF14EF68827A1CF34 /* libPods-PersonalProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A824136D775C230BEBBC2CEE /* libPods-PersonalProject.a */; };
 		808DB79A1BA7D5E900AC0CBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB7991BA7D5E900AC0CBC /* main.m */; };
 		808DB79D1BA7D5E900AC0CBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB79C1BA7D5E900AC0CBC /* AppDelegate.m */; };
 		808DB7A01BA7D5E900AC0CBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB79F1BA7D5E900AC0CBC /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34F098DCDDDA5A474E7A2F9F /* Pods-PersonalProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalProject/Pods-PersonalProject.release.xcconfig"; sourceTree = "<group>"; };
 		808DB7941BA7D5E900AC0CBC /* PersonalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808DB7981BA7D5E900AC0CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808DB7991BA7D5E900AC0CBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		808DB7AD1BA7D5E900AC0CBC /* PersonalProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PersonalProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		808DB7B21BA7D5E900AC0CBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808DB7B31BA7D5E900AC0CBC /* PersonalProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalProjectTests.m; sourceTree = "<group>"; };
+		9F04981D19F5D6CEDCD6E2CC /* Pods-PersonalProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonalProject/Pods-PersonalProject.debug.xcconfig"; sourceTree = "<group>"; };
+		A824136D775C230BEBBC2CEE /* libPods-PersonalProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonalProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5C3AAEF14EF68827A1CF34 /* libPods-PersonalProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A1B039B5ED175139991D399 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A824136D775C230BEBBC2CEE /* libPods-PersonalProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72502DE132644442B3BCD2E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F04981D19F5D6CEDCD6E2CC /* Pods-PersonalProject.debug.xcconfig */,
+				34F098DCDDDA5A474E7A2F9F /* Pods-PersonalProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		808DB78B1BA7D5E900AC0CBC = {
 			isa = PBXGroup;
 			children = (
 				808DB7961BA7D5E900AC0CBC /* PersonalProject */,
 				808DB7B01BA7D5E900AC0CBC /* PersonalProjectTests */,
 				808DB7951BA7D5E900AC0CBC /* Products */,
+				72502DE132644442B3BCD2E1 /* Pods */,
+				6A1B039B5ED175139991D399 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 808DB7B71BA7D5E900AC0CBC /* Build configuration list for PBXNativeTarget "PersonalProject" */;
 			buildPhases = (
+				48C0E99A4748136774315958 /* Check Pods Manifest.lock */,
 				808DB7901BA7D5E900AC0CBC /* Sources */,
 				808DB7911BA7D5E900AC0CBC /* Frameworks */,
 				808DB7921BA7D5E900AC0CBC /* Resources */,
+				F115C13B7F0A10838FE1F705 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48C0E99A4748136774315958 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F115C13B7F0A10838FE1F705 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonalProject/Pods-PersonalProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		808DB7901BA7D5E900AC0CBC /* Sources */ = {
@@ -345,6 +404,7 @@
 		};
 		808DB7B81BA7D5E900AC0CBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F04981D19F5D6CEDCD6E2CC /* Pods-PersonalProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PersonalProject/Info.plist;
@@ -355,6 +415,7 @@
 		};
 		808DB7B91BA7D5E900AC0CBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F098DCDDDA5A474E7A2F9F /* Pods-PersonalProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PersonalProject/Info.plist;
@@ -416,6 +477,7 @@
 				808DB7B91BA7D5E900AC0CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		808DB7BA1BA7D5E900AC0CBC /* Build configuration list for PBXNativeTarget "PersonalProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +486,7 @@
 				808DB7BC1BA7D5E900AC0CBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
